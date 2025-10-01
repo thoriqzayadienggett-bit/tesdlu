@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VisualCraft — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">VisualCraft</a>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Craft designs • Papercut • Shadowbox</h1>
+          <p>Clean, cheerful designs for digital craft marketplaces — ready to download and use for Cricut / Sublimation / Papercut.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#works">See Works</a>
+            <a class="btn-ghost" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="mockup">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="mockup">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works container">
+      <h2 class="section-title">Featured Designs</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder')"></div>
+          <div class="card-body">
+            <h3>Coquette Birthday Papercut</h3>
+            <p class="muted">SVG + Cutting guide</p>
+            <div class="card-actions">
+              <a class="link" href="#">Preview</a>
+              <a class="btn-sm" href="#">Download</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder')"></div>
+          <div class="card-body">
+            <h3>Animal Sarcasm Sublimation</h3>
+            <p class="muted">PNG / High-res</p>
+            <div class="card-actions">
+              <a class="link" href="#">Preview</a>
+              <a class="btn-sm" href="#">Download</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder')"></div>
+          <div class="card-body">
+            <h3>Shadow Box Floral</h3>
+            <p class="muted">Multi-layer SVG</p>
+            <div class="card-actions">
+              <a class="link" href="#">Preview</a>
+              <a class="btn-sm" href="#">Download</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div>
+          <p>Hi—I'm Nurul, a craft designer focusing on papercut, shadowbox, and cheerful SVGs. I create market-ready files suitable for Cricut, Silhouette, and sublimation printing.</p>
+        </div>
+        <div class="stats">
+          <div><strong>50+</strong><span>Designs</span></div>
+          <div><strong>10k+</strong><span>Downloads</span></div>
+          <div><strong>Creative Fabrica</strong><span>Seller</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact</h2>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Tulis pesan..." required></textarea>
+        <div class="form-actions">
+          <button class="btn" type="submit">Kirim</button>
+          <button class="btn-ghost" type="button" onclick="resetForm()">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> VisualCraft — Crafted with ♥</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
